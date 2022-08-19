@@ -1,0 +1,63 @@
+.area {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: var(--door-width);
+  height: var(--door-height);
+  margin: 5px;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column-reverse;
+  flex: 1;
+  width: 90%;
+  border-top: 5px solid brown;
+  border-left: 5px solid brown;
+  border-right: 5px solid brown;
+  background: #0003;
+}
+
+.door {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background: chocolate;
+  align-items: center;
+  padding: 15px;
+}
+
+.numberDoor {
+  font-size: 3rem;
+}
+
+.doorHandle {
+  position: absolute;
+  align-self: flex-start;
+  top: calc(0.45 * var(--door-height));
+  height: 20px;
+  width: 20px;
+  border-radius: 10px;
+  background: brown;
+}
+
+.floor {
+  height: 10px;
+  width: 100%;
+  background: #ddd;
+}
+
+.selected {
+  border-top: 5px solid yellow;
+  border-left: 5px solid yellow;
+  border-right: 5px solid yellow;
+}
+
+.selected .numberDoor {
+  color: yellow;
+}
+
+.selected .doorHandle {
+  background: yellow;
+}

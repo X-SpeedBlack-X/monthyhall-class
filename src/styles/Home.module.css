@@ -1,0 +1,33 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.home > div {
+  display: flex;
+}
+
+.link {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 635px) {
+  .home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(50% - 25%);
+    height: 100vh;
+    widht: 100vw;
+    padding: 90px;
+  }
+}
